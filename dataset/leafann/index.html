@@ -636,7 +636,7 @@
 <li>Leaf/Branch based annotation details can provided for each leaf along with leaf Name.</li>
 </ul>
 <p>Here is an quick example</p>
-<p><img alt="" src="/img/DatasetBranchAnn.png" /></p>
+<p><img alt="" src="img/DatasetBranchAnn.png" /></p>
 <h4 id="related-modifiers">Related modifiers</h4>
 <div class="admonition note">
 <p>Supported Key-Value pairs</p>
@@ -709,13 +709,13 @@
 <li>a name of a leaf label.</li>
 </ul>
 <p>The second part specifics the 'label' (required) and either provide group_class id or settings for this label such as font color, size.</p>
-<p><img alt="" src="/img/DatasetBranchAnn01.png" /></p>
+<p><img alt="" src="img/DatasetBranchAnn01.png" /></p>
 <h4 id="visualization-styles">Visualization styles</h4>
 <h4 id="tree">Tree</h4>
 <div class="highlight"><pre><span></span><code>(A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
 </code></pre></div>
 <details class="example" open="open"><summary>Example</summary><h4 id="example-1">Example 1</h4>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetBranchAnn00.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetBranchAnn00.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>!groups	bad,good
 !colors	red,green
 
@@ -732,7 +732,7 @@ D	T1
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-2">Example 2</h4>
 <p>The shape of the annotation can be omitted, this gives us a text label next to the tree branch label with specified properties.</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetBranchAnn02.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetBranchAnn02.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>!groups	bad,good
 !colors	red,green
 
@@ -749,7 +749,7 @@ D	T1
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-3">Example 3</h4>
 <p>The leaf annotation can also of gradient background type. This provides an gradient background that extends from the annotation label till the the brach. This can be applied using the <strong>!leaf_annotation_style    2</strong> keyword. </p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetBranchAnn03.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetBranchAnn03.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code><span class="hll"><span class="err">!</span><span class="n">leaf_annotation_style</span>	<span class="mi">2</span>
 </span><span class="c1">##class def</span>
 <span class="err">!</span><span class="n">groups_class</span>	<span class="nb">id</span><span class="o">=</span><span class="n">T1</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="n">bad</span><span class="p">,</span><span class="n">bkcolor</span><span class="o">=</span><span class="n">red</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="n">black</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span>

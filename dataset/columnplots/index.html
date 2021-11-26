@@ -672,12 +672,12 @@
                 
                 <h3 id="overview">Overview</h3>
 <p>Column plots provides a flexable way of visualising summary information of species in a phylogenetic tree, it was inspired by the figure 6 (the column plots on the right) of a recent publication in eLife:</p>
-<p><img alt="" src="/img/DatasetColumnPlots_elife2015.png" /></p>
+<p><img alt="" src="img/DatasetColumnPlots_elife2015.png" /></p>
 <div class="admonition note">
 <p>source: <em>Laumer, Christopher E., Andreas Hejnol, and Gonzalo Giribet. "Nuclear genomic signals of the ‘microturbellarian’roots of platyhelminth evolutionary innovation." eLife 4 (2015): e05503.</em></p>
 <p><em>note</em>: thanks to Desmond Ramirez of the UCSB who brought this figure to our attention.</p>
 <p>Here is our implementation in evolview:</p>
-<p><img alt="" src="/img/DatasetColumnPlots_columnplots_popup.png" /></p>
+<p><img alt="" src="img/DatasetColumnPlots_columnplots_popup.png" /></p>
 </div>
 <h3 id="tree">Tree:</h3>
 <div class="highlight"><pre><span></span><code>(A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
@@ -824,7 +824,7 @@ namedcolumn=fast evolving,color=lightgreen:darker
 <li>darkblue:brighter</li>
 </ul>
 <p>When 'darker' or 'brighter'/'lighter' is used, the stroke color will be <strong><em>20% darker or brighter</em></strong> than the specified color.</p>
-<p>See <a href="/img/01_stroke_color_and_width/DatasetStroke.md">here</a> for more details.</p>
+<p>See <a href="img/01_stroke_color_and_width/DatasetStroke.md">here</a> for more details.</p>
 <h3 id="prepare-a-column-of-data-for-visualisation">prepare a column of data for visualisation</h3>
 <p>As shown in the previous example, a column of data often consists of <em><strong>two parts</strong></em>,</p>
 <ol>
@@ -856,7 +856,7 @@ namedcolumn=thermopiles,color=purple:darker
 	from=A,to=C
 	from=D,color=white:purple,text=?,width=20,style=circle,textangle=0
 </code></pre></div>
-<p><img alt="" src="/img/DatasetColumnPlots_single_column.png" /></p>
+<p><img alt="" src="img/DatasetColumnPlots_single_column.png" /></p>
 <details class="tip" open="open"><summary>Tip</summary><p><strong><em>Note</em></strong>:</p>
 <ul>
 <li>the dataset is case-insensitive</li>
@@ -865,7 +865,7 @@ namedcolumn=thermopiles,color=purple:darker
 </details>
 <details class="example" open="open"><summary>Example</summary><h4 id="example-1">Example 1</h4>
 <p>Example 1. a column with two fragments, one span three leaf nodes, while the other spans only one.:</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_01.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetColumnPlots_example_01.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>## --
 ## -- some global options
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
@@ -879,7 +879,7 @@ namedcolumn=thermopiles,color=lightblue:darker
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-2">Example 2</h4>
 <p>try change the style / shape of the fragments, however it only work when a fragment spans only one leaf node:</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_02.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetColumnPlots_example_02.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>##
 ## -- some global options
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
@@ -894,7 +894,7 @@ namedcolumn=thermopiles,color=lightblue:darker
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-3">Example 3</h4>
 <p>now try change the width of the fragments:</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_03.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetColumnPlots_example_03.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>##
 ## -- some global options
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
@@ -907,7 +907,7 @@ namedcolumn=thermopiles,color=lightblue:darker,width=20
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-4">Example 4</h4>
 <p>you can change the widths of the fragments individually:</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_04.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetColumnPlots_example_04.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>##
 ## -- some global options
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
@@ -921,7 +921,7 @@ namedcolumn=thermopiles,color=lightblue:darker,width=25
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-5">Example 5</h4>
 <p>we know for sure the first three species are thermophilic, but the last one???</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_05.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetColumnPlots_example_05.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>##
 ## -- some global options
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
@@ -933,7 +933,7 @@ namedcolumn=thermopiles,color=#FF33CC:darker,width=25
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-6">Example 6</h4>
 <p>now we'd like the readers to pay more attention to species A and C:</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_06.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetColumnPlots_example_06.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>##
 ## -- some global options
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
@@ -950,7 +950,7 @@ namedcolumn=thermopiles,color=lightblue:darker,width=25
 </details>
 <details class="example"><summary>Example</summary><h4 id="example-7">Example 7</h4>
 <p>we can have multiple columns in a dataset:</p>
-<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_07.png" width="400" /></p>
+<p><img align="right" alt="Placeholder" class="zoom" src="img/DatasetColumnPlots_example_07.png" width="400" /></p>
 <div class="highlight"><pre><span></span><code>##
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45,spacebetweencolumns=15
 

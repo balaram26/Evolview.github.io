@@ -716,9 +716,9 @@
 <li>this feature does <strong>NOT</strong> work in "slanted cladogram" mode</li>
 </ul>
 <p>Datasets can be uploaded using the following button on the toolbar:</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_internally_toolbar.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_collapse_internally_toolbar.png" /></p>
 <p>Here is an example:</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_internal_nodes.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_collapse_internal_nodes.png" /></p>
 <div class="admonition note">
 <h3 id="supported-modifiers">Supported modifiers</h3>
 <p>We didn't introduce new modifiers for this annotation type; only the following universal modifiers related to legends are supported:</p>
@@ -763,14 +763,14 @@
 <p>The data part contains a list of internal nodes at which the tree should collapse. There are <strong>three ways</strong> of specifying an internal node. Let's take the following tree as an example:</p>
 <div class="highlight"><pre><span></span><code>(A,(B,(C,(D,E)2DE)CDE3)BC3DE)ROOT;
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_a_very_simple_tree.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_a_very_simple_tree.png" /></p>
 <p>Now we try to collapse the tree at the last common ancestor of the leaf nodes "C" and "E". The simplest way is to upload a dataset with the following content:</p>
 <div class="highlight"><pre><span></span><code>C,E
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_data_01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_collapse_data_01.png" /></p>
 <hr />
 <p>Alternatively, users can point to the internal node by using its "internal id" or name (if available); to find out such information, simply mouseover the internal node of interest:</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_mouse_over_internal_node.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_mouse_over_internal_node.png" /></p>
 <p>Therefore the above dataset is equivalent to:</p>
 <div class="highlight"><pre><span></span><code>## internal id
 INT3
@@ -788,14 +788,14 @@ CDE3
 <div class="highlight"><pre><span></span><code>A,B
 C,D
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png" /></p>
 <h3 id="size-of-the-triangles">Size of the triangles</h3>
 <p>The <strong><em>height</em></strong> of a triangle is proportional to the number of leaf nodes that the corresponding internal node contains, it is calculated using the equation:</p>
 <div class="highlight"><pre><span></span><code>( 1 + log10( number of contained daughter nodes ) ) * vertical scale * 30%
 </code></pre></div>
 <p>while the <strong><em>width</em></strong> of the triangle is defined by "horizontal scale".</p>
 <p>The "vertical scale" and "horizontal scale" can be changed/ specified using the toolbar (the "Basic" tab):</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_toolbar_scales.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_toolbar_scales.png" /></p>
 <h3 id="customise-the-collapsed-nodes">Customise the collapsed nodes</h3>
 <h4 id="naming-collapsed-nodes-work-in-progress">Naming collapsed nodes (work in progress)</h4>
 <p>By default, the text displayed next to the collapsed node is the node name (see the annotated figure above); if the node is not named, its internal name (INT###) will be used.</p>
@@ -811,12 +811,12 @@ C,D
 <div class="highlight"><pre><span></span><code>Scer|YPL277C,Spar|spar435-g2.1	name=my triangle,color=green,linewidth=2,linestyle=dashed
 </code></pre></div></p>
 <p>will be visualised as:</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_name_and_style_collapsed_node.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_name_and_style_collapsed_node.png" /></p>
 <p>please note that we support HTML coded texts as the <strong>name</strong> of the collapsed node; for example:</p>
 <div class="highlight"><pre><span></span><code>Scer|YPL277C,Spar|spar435-g2.1	name=my <span class="p">&lt;</span><span class="nt">i</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:pink&quot;</span><span class="p">&gt;</span>triangle<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>,color=green,linewidth=2,linestyle=dashed
 </code></pre></div>
-<p>when the HTML mode is enabled (by using the 'HTML' button <img alt="" src="/img/htmlmode_button.png" /> on the toolbar), the collapsed node will be visualised as:</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_name_and_style_collapsed_node_with_HTMLcode.png" /></p>
+<p>when the HTML mode is enabled (by using the 'HTML' button <img alt="" src="img/htmlmode_button.png" /> on the toolbar), the collapsed node will be visualised as:</p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_name_and_style_collapsed_node_with_HTMLcode.png" /></p>
 <p>Here the tree (which also contains some HTML code):
 <div class="highlight"><pre><span></span><code>((((((Scer|&lt;i style=&quot;color:red;background-color:lightgreen&quot;&gt;YPL277C&lt;/i&gt;:1.234e-10,Spar|spar435-g2.1),Sbay|sbayc582-g2.1),(Scer|YOR389W,Smik|smik240-g1.1)),(Klac|KLLA0E19349g,Sklu|SAKL0A04994g)),Ylip|YALI0A21131g),Anid|AN4574);
 </code></pre></div></p>
@@ -831,20 +831,20 @@ C,D
 <div class="highlight"><pre><span></span><code>A,B
 C,D
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png" /></p>
 <h4 id="branch-colors">Branch colors</h4>
 <div class="highlight"><pre><span></span><code>## note the branch color applies to the triangles too.
 INT3	lightblue
 E	darkgreen
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_branchcolor1.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_branchcolor1.png" /></p>
 <hr />
 <div class="highlight"><pre><span></span><code>## &#39;ad&#39; works but the &#39;prefix&#39; and &#39;suffix&#39; do not
 ## here INT3,INT4 defines the last common ancestor on the tree,
 ## &#39;ad&#39; means that the color &#39;red&#39; would be applied to all its descendants.
 INT3,INT4	red	ad
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_branchcolor2.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_branchcolor2.png" /></p>
 <p>see <a href="DatasetBranchColor">here</a> for more about branch colors.</p>
 <h4 id="leaf-colors-and-leaf-background-colors">Leaf colors and leaf background colors</h4>
 <div class="highlight"><pre><span></span><code>## leaf colors
@@ -852,14 +852,14 @@ E	darkred
 INT3	pink
 INT4	green
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_leafcolors01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_leafcolors01.png" /></p>
 <hr />
 <div class="highlight"><pre><span></span><code>## leaf bk color
 INT3	lightblue
 INT4	lightgreen
 E	pink
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_leafbkcolor01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_leafbkcolor01.png" /></p>
 <p>please see <a href="DatasetLeafColor">here</a> for more information on leaf colors, and <a href="DatasetLeafBKColor">here</a> for leaf background colors.</p>
 <h4 id="color-shapes-and-strips">Color shapes and strips</h4>
 <div class="highlight"><pre><span></span><code>##color strips
@@ -870,9 +870,9 @@ A,B	red,green,blue
 INT4	lightblue
 E	darkgreen,grey,pink
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_colorstrips01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_colorstrips01.png" /></p>
 <p>... in circular mode:</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_colorstrips02.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_colorstrips02.png" /></p>
 <h3 id="pie-charts">pie charts</h3>
 <h3 id="leaf-label-decorations">leaf label decorations</h3>
 <div class="highlight"><pre><span></span><code>!defaultstrokewidth	2
@@ -883,15 +883,15 @@ C,D	triangle,white:darker
 ## -- a leaf node
 E	rect,green:darker
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_leafdeco01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_leafdeco01.png" /></p>
 <h3 id="group-label">Group label</h3>
 <div class="highlight"><pre><span></span><code>!grouplabel	style=1,color=pink,show=1,fontsize=14
 INT3,INT4	text=group 1,textorientation=vertical
 E	text=mammal,color=darkgreen,linewidth=4,fontsize=16,bkcolor=green
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_grouplabelstyle1_01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_grouplabelstyle1_01.png" /></p>
 <p>... in circular mode:</p>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_grouplabelstyle1_01_circular.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_grouplabelstyle1_01_circular.png" /></p>
 <h3 id="dot-plot">Dot plot</h3>
 <div class="highlight"><pre><span></span><code>##dot plots
 !groups	dot 1,dot 2,dot 3
@@ -919,7 +919,7 @@ A,B	20,20,20
 INT4	8,9,7
 E	20,20,20
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_dotplots01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_dotplots01.png" /></p>
 <h3 id="heatmap">Heatmap</h3>
 <div class="highlight"><pre><span></span><code>#heatmap
 !legendTitle	heatmap for a collapsed tree
@@ -940,7 +940,7 @@ INT3	7,9,10,4
 C,D	-2,3,5,25
 E	16,12,19,4
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_heatmap01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_heatmap01.png" /></p>
 <h3 id="column-plot">Column plot</h3>
 <div class="highlight"><pre><span></span><code>## --
 !columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45,spacebetweencolumns=10
@@ -962,7 +962,7 @@ namedcolumn=fast evolving,color=lightgreen:darker
 	from=INT3,to=E
 	from=INT4,style=none,text=*,textangle=0,width=20
 </code></pre></div>
-<p><img alt="" src="/img/DatasetCollapseInternalNodes_columnplots01.png" /></p>
+<p><img alt="" src="img/DatasetCollapseInternalNodes_columnplots01.png" /></p>
                 
               
               
