@@ -1,0 +1,1051 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User documentation for Evolview.">
+      
+      
+      
+        <meta name="author" content="Evolgenius Team">
+      
+      
+        <link rel="canonical" href="https://www.evolgenius.info/help/dataset/collapseintnodes/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>Collapse internal nodes - Evolview documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Evolview documentation" class="md-header__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Evolview documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Collapse internal nodes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Evolview documentation" class="md-nav__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Evolview documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        Quick start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verhistory/" class="md-nav__link">
+        Version history
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../locdeploy/" class="md-nav__link">
+        Local Deploy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Datasets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Datasets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Datasets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stroke/" class="md-nav__link">
+        Stroke color and width
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../piechart/" class="md-nav__link">
+        Pie chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bars/" class="md-nav__link">
+        Bar chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchcolors/" class="md-nav__link">
+        Branch colors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchlabel/" class="md-nav__link">
+        Branch label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchmarker/" class="md-nav__link">
+        Branch marker
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafclr/" class="md-nav__link">
+        Leaf color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafbkclr/" class="md-nav__link">
+        Leaf background color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaflabdeco/" class="md-nav__link">
+        Leaf label Decoration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafann/" class="md-nav__link">
+        Leaf annotation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafImg/" class="md-nav__link">
+        Leaf images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clrstripshape/" class="md-nav__link">
+        Color strips and color shapes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protdomain/" class="md-nav__link">
+        Protein domains
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grouplabel/" class="md-nav__link">
+        Group label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dotplots/" class="md-nav__link">
+        Dotplot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heatmap/" class="md-nav__link">
+        Heatmap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bootstrapvalstyle/" class="md-nav__link">
+        Bootstrapvalue style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../columnplots/" class="md-nav__link">
+        Column plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Collapse internal nodes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Collapse internal nodes
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-modifiers" class="md-nav__link">
+    Supported modifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specify-define-the-internal-nodes-to-collapse" class="md-nav__link">
+    Specify/ define the internal node(s) to collapse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#size-of-the-triangles" class="md-nav__link">
+    Size of the triangles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customise-the-collapsed-nodes" class="md-nav__link">
+    Customise the collapsed nodes
+  </a>
+  
+    <nav class="md-nav" aria-label="Customise the collapsed nodes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-collapsed-nodes-work-in-progress" class="md-nav__link">
+    Naming collapsed nodes (work in progress)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#styling-collapsed-nodes" class="md-nav__link">
+    Styling collapsed nodes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-datasets-to-a-collapsed-tree" class="md-nav__link">
+    Add datasets to a collapsed tree
+  </a>
+  
+    <nav class="md-nav" aria-label="Add datasets to a collapsed tree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#branch-colors" class="md-nav__link">
+    Branch colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leaf-colors-and-leaf-background-colors" class="md-nav__link">
+    Leaf colors and leaf background colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-shapes-and-strips" class="md-nav__link">
+    Color shapes and strips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pie-charts" class="md-nav__link">
+    pie charts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leaf-label-decorations" class="md-nav__link">
+    leaf label decorations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-label" class="md-nav__link">
+    Group label
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dot-plot" class="md-nav__link">
+    Dot plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmap" class="md-nav__link">
+    Heatmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#column-plot" class="md-nav__link">
+    Column plot
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        Timeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genesynteny/" class="md-nav__link">
+        Gene Synteny
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Collapse internal nodes</h1>
+                
+                <h3 id="overview">Overview</h3>
+<p>With this annotation type, users can :</p>
+<ul>
+<li>collapse at internal nodes</li>
+<li>show a small triangle at the collapsed nodes that is proportional to the number of leaves that the collapsed node contains</li>
+</ul>
+<p><em><strong>Please note</strong></em></p>
+<ul>
+<li>a tree <strong>CAN NOT</strong> be collapsed at leaf nodes or the root</li>
+<li>this feature does <strong>NOT</strong> work in "slanted cladogram" mode</li>
+</ul>
+<p>Datasets can be uploaded using the following button on the toolbar:</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_internally_toolbar.png" /></p>
+<p>Here is an example:</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_internal_nodes.png" /></p>
+<div class="admonition note">
+<h3 id="supported-modifiers">Supported modifiers</h3>
+<p>We didn't introduce new modifiers for this annotation type; only the following universal modifiers related to legends are supported:</p>
+<table>
+<thead>
+<tr>
+<th>Key (case insensitive)</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>!Groups or !LegendText</td>
+<td>comma separated text</td>
+<td>Legend texts; for example 'group_a,group_b,group_c'</td>
+</tr>
+<tr>
+<td>!LegendStyle or !Style</td>
+<td>rect or circle or star</td>
+<td>shapes to be plotted before the legend texts; default = rect</td>
+</tr>
+<tr>
+<td>!LegendColors or !Colors</td>
+<td>comma separated color codes or names</td>
+<td>colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ; note the number of colors should match the number of legend fields</td>
+</tr>
+<tr>
+<td>!Title or !Legend</td>
+<td>text</td>
+<td>title of the legend; default = name of the dataset</td>
+</tr>
+<tr>
+<td>!ShowLegends</td>
+<td>0 or 1</td>
+<td>0 : hide legends; 1 : show legends</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="specify-define-the-internal-nodes-to-collapse">Specify/ define the internal node(s) to collapse</h3>
+<p>The data part contains a list of internal nodes at which the tree should collapse. There are <strong>three ways</strong> of specifying an internal node. Let's take the following tree as an example:</p>
+<div class="highlight"><pre><span></span><code>(A,(B,(C,(D,E)2DE)CDE3)BC3DE)ROOT;
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_a_very_simple_tree.png" /></p>
+<p>Now we try to collapse the tree at the last common ancestor of the leaf nodes "C" and "E". The simplest way is to upload a dataset with the following content:</p>
+<div class="highlight"><pre><span></span><code>C,E
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_data_01.png" /></p>
+<hr />
+<p>Alternatively, users can point to the internal node by using its "internal id" or name (if available); to find out such information, simply mouseover the internal node of interest:</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_mouse_over_internal_node.png" /></p>
+<p>Therefore the above dataset is equivalent to:</p>
+<div class="highlight"><pre><span></span><code>## internal id
+INT3
+</code></pre></div>
+<p>... or</p>
+<div class="highlight"><pre><span></span><code>## name of the internal node
+CDE3
+</code></pre></div>
+<p>Please consult <a href="/supportedtreeformats/SupportedTreeFormats.md#name-internal-nodes">this wiki</a> for more information on naming internal nodes.</p>
+<hr />
+<p>Of course users can collapse at multiple internal nodes at the same time. Let's use a different tree:</p>
+<div class="highlight"><pre><span></span><code>( ( (A:0.4,B:0.3)90:0.2,(C:0.1,D:0.001)75:0.2 )90:0.3, E:0.44 )100:0.3;
+</code></pre></div>
+<p>This tree does not have named internal nodes, so we use leaf nodes to define the internal nodes at where the tree would collapses:</p>
+<div class="highlight"><pre><span></span><code>A,B
+C,D
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png" /></p>
+<h3 id="size-of-the-triangles">Size of the triangles</h3>
+<p>The <strong><em>height</em></strong> of a triangle is proportional to the number of leaf nodes that the corresponding internal node contains, it is calculated using the equation:</p>
+<div class="highlight"><pre><span></span><code>( 1 + log10( number of contained daughter nodes ) ) * vertical scale * 30%
+</code></pre></div>
+<p>while the <strong><em>width</em></strong> of the triangle is defined by "horizontal scale".</p>
+<p>The "vertical scale" and "horizontal scale" can be changed/ specified using the toolbar (the "Basic" tab):</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_toolbar_scales.png" /></p>
+<h3 id="customise-the-collapsed-nodes">Customise the collapsed nodes</h3>
+<h4 id="naming-collapsed-nodes-work-in-progress">Naming collapsed nodes (work in progress)</h4>
+<p>By default, the text displayed next to the collapsed node is the node name (see the annotated figure above); if the node is not named, its internal name (INT###) will be used.</p>
+<p>Please consult <a href="/supportedtreeformats/SupportedTreeFormats.md#name-internal-nodes">this wiki</a> for more information on naming internal nodes.</p>
+<p>In the future, we'll allow users to name the collapsed nodes directly in the dataset. For example:</p>
+<div class="highlight"><pre><span></span><code>C,D	name=my collapsed node
+</code></pre></div>
+<h4 id="styling-collapsed-nodes">Styling collapsed nodes</h4>
+<p>Users can customise the visualisation styles of the collapsed nodes using the grammar below. For example:</p>
+<div class="highlight"><pre><span></span><code>C,D	name=my collapsed node,color=yellow,linewidth=2,linestyle=dashed
+</code></pre></div>
+<p>please note that HTML codes are also supported for the name; for example:
+<div class="highlight"><pre><span></span><code>Scer|YPL277C,Spar|spar435-g2.1	name=my triangle,color=green,linewidth=2,linestyle=dashed
+</code></pre></div></p>
+<p>will be visualised as:</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_name_and_style_collapsed_node.png" /></p>
+<p>please note that we support HTML coded texts as the <strong>name</strong> of the collapsed node; for example:</p>
+<div class="highlight"><pre><span></span><code>Scer|YPL277C,Spar|spar435-g2.1	name=my <span class="p">&lt;</span><span class="nt">i</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:pink&quot;</span><span class="p">&gt;</span>triangle<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>,color=green,linewidth=2,linestyle=dashed
+</code></pre></div>
+<p>when the HTML mode is enabled (by using the 'HTML' button <img alt="" src="/img/htmlmode_button.png" /> on the toolbar), the collapsed node will be visualised as:</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_name_and_style_collapsed_node_with_HTMLcode.png" /></p>
+<p>Here the tree (which also contains some HTML code):
+<div class="highlight"><pre><span></span><code>((((((Scer|&lt;i style=&quot;color:red;background-color:lightgreen&quot;&gt;YPL277C&lt;/i&gt;:1.234e-10,Spar|spar435-g2.1),Sbay|sbayc582-g2.1),(Scer|YOR389W,Smik|smik240-g1.1)),(Klac|KLLA0E19349g,Sklu|SAKL0A04994g)),Ylip|YALI0A21131g),Anid|AN4574);
+</code></pre></div></p>
+<p><strong>please note</strong> that under <strong><em>HTML mode</em></strong>, exporting to graphical formats may NOT work. You may export your visualisation to a SVG file, but it can only be visualised correctly by browsers such as Firefox, Google Chrome and Apple Safari, NOT by Adobe Illustrator.</p>
+<h3 id="add-datasets-to-a-collapsed-tree">Add datasets to a collapsed tree</h3>
+<p>In general, collapsed internal nodes are treated as leaf nodes. An internal node can be identified by its internal id, or if available, node name. To find such information, users can simply mouse-over an internal node.</p>
+<p>Here we use some examples to show how to add other datasets to a collapsed tree.</p>
+<p>The tree:</p>
+<div class="highlight"><pre><span></span><code>( ( (A:0.4,B:0.3)90:0.2,(C:0.1,D:0.001)75:0.2 )90:0.3, E:0.44 )100:0.3;
+</code></pre></div>
+<p>... and the dataset for collapsing the tree (the same as the example above):</p>
+<div class="highlight"><pre><span></span><code>A,B
+C,D
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_collapse_at_two_internal_nodes.png" /></p>
+<h4 id="branch-colors">Branch colors</h4>
+<div class="highlight"><pre><span></span><code>## note the branch color applies to the triangles too.
+INT3	lightblue
+E	darkgreen
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_branchcolor1.png" /></p>
+<hr />
+<div class="highlight"><pre><span></span><code>## &#39;ad&#39; works but the &#39;prefix&#39; and &#39;suffix&#39; do not
+## here INT3,INT4 defines the last common ancestor on the tree,
+## &#39;ad&#39; means that the color &#39;red&#39; would be applied to all its descendants.
+INT3,INT4	red	ad
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_branchcolor2.png" /></p>
+<p>see <a href="DatasetBranchColor">here</a> for more about branch colors.</p>
+<h4 id="leaf-colors-and-leaf-background-colors">Leaf colors and leaf background colors</h4>
+<div class="highlight"><pre><span></span><code>## leaf colors
+E	darkred
+INT3	pink
+INT4	green
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_leafcolors01.png" /></p>
+<hr />
+<div class="highlight"><pre><span></span><code>## leaf bk color
+INT3	lightblue
+INT4	lightgreen
+E	pink
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_leafbkcolor01.png" /></p>
+<p>please see <a href="DatasetLeafColor">here</a> for more information on leaf colors, and <a href="DatasetLeafBKColor">here</a> for leaf background colors.</p>
+<h4 id="color-shapes-and-strips">Color shapes and strips</h4>
+<div class="highlight"><pre><span></span><code>##color strips
+!type	strip,check,rect,star,circle
+## -- here A,B == INT3
+A,B	red,green,blue
+## -- or directly use the internal id to point to an internal node --
+INT4	lightblue
+E	darkgreen,grey,pink
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_colorstrips01.png" /></p>
+<p>... in circular mode:</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_colorstrips02.png" /></p>
+<h3 id="pie-charts">pie charts</h3>
+<h3 id="leaf-label-decorations">leaf label decorations</h3>
+<div class="highlight"><pre><span></span><code>!defaultstrokewidth	2
+## -- use internal id of an internal node --
+INT3	rect,pink:red	check,pink
+## -- use two leaf nodes to define an internal node --
+C,D	triangle,white:darker
+## -- a leaf node
+E	rect,green:darker
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_leafdeco01.png" /></p>
+<h3 id="group-label">Group label</h3>
+<div class="highlight"><pre><span></span><code>!grouplabel	style=1,color=pink,show=1,fontsize=14
+INT3,INT4	text=group 1,textorientation=vertical
+E	text=mammal,color=darkgreen,linewidth=4,fontsize=16,bkcolor=green
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_grouplabelstyle1_01.png" /></p>
+<p>... in circular mode:</p>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_grouplabelstyle1_01_circular.png" /></p>
+<h3 id="dot-plot">Dot plot</h3>
+<div class="highlight"><pre><span></span><code>##dot plots
+!groups	dot 1,dot 2,dot 3
+!colors	#028482,#7ABA7A,purple
+!title	dot plots for a collapsed tree
+# -- legends --
+!legendstyle	circle
+!showLegends	1
+## -- if !scalebycol is set to 1, each column of data will be scaled independently
+!scalebycol	0
+!byarea	1
+# ---- grid and grid label / group label are also supported --
+!grid	1
+!gridlabel	1
+# stroke and stroke color also work here
+!defaultStrokeColor	pink
+#!defaultStrokeWidth	2
+# here shape can be &#39;rect&#39; or &#39;circle&#39;; roundedcorner only applies to &#39;rect&#39; shapes ...
+!dotplots	shape=circle,margin=2,colwidth=30,roundedcorner=3
+## -- show data value works at here as well --
+!showdataValue	show=1,fontsize=12,fontitalic=0
+!columnlabelstyle	fontsize=12,fontbold=1
+## here A,B == INT3
+A,B	20,20,20
+INT4	8,9,7
+E	20,20,20
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_dotplots01.png" /></p>
+<h3 id="heatmap">Heatmap</h3>
+<div class="highlight"><pre><span></span><code>#heatmap
+!legendTitle	heatmap for a collapsed tree
+!showLegends	1
+#!defaultStrokeColor	pink
+#!defaultStrokeWidth	2
+!colorgradient	blue, yellow,red
+!colorgradientMarkLabel	0,5,10,15,20,25
+# -- heatmap column labels --
+!showHeatMapColumnLabel	1
+!heatmapColumnLabels	e1,e2,e3,control
+# -- heatmap --
+!heatmap	margin=2,colwidth=30,roundedcorner=2
+# -- show data value
+!showdataValue	show=1,fontsize=12,fontitalic=0,textalign=start
+!columnlabelstyle	fontsize=12,fontbold=1,fontcolor=darkred
+INT3	7,9,10,4
+C,D	-2,3,5,25
+E	16,12,19,4
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_heatmap01.png" /></p>
+<h3 id="column-plot">Column plot</h3>
+<div class="highlight"><pre><span></span><code>## --
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45,spacebetweencolumns=10
+
+## a column of data starts with a &#39;namedcolumn&#39;, it defines global options for the corresponding column
+namedcolumn=thermopiles,color=purple:darker
+	## followed by the following fragments
+	from=A,to=C
+	from=D,color=white:purple,text=?,width=20,style=circle,textangle=0
+	from=INT3,to=INT4
+	from=E,color=white:purple,text=?,width=20,style=circle,textangle=0
+
+## -- 2nd column
+namedcolumn=habitat,width=15
+	from=INT3,to=E,text=aquatic,textangle=-90,color=white:lightblue
+
+## -- 3rd column
+namedcolumn=fast evolving,color=lightgreen:darker
+	from=INT3,to=E
+	from=INT4,style=none,text=*,textangle=0,width=20
+</code></pre></div>
+<p><img alt="" src="/img/DatasetCollapseInternalNodes_columnplots01.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../columnplots/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Column plot
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../timeline/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Timeline
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Evolgenius.info.Subramanian et al. Evolview v3 Nucleic Acids Res https://doi.org/10.1093/nar/gkz357
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

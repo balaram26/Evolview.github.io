@@ -1,0 +1,861 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User documentation for Evolview.">
+      
+      
+      
+        <meta name="author" content="Evolgenius Team">
+      
+      
+        <link rel="canonical" href="https://www.evolgenius.info/help/dataset/piechart/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>Pie chart - Evolview documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#related-modifiers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Evolview documentation" class="md-header__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Evolview documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pie chart
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Evolview documentation" class="md-nav__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Evolview documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        Quick start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verhistory/" class="md-nav__link">
+        Version history
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../locdeploy/" class="md-nav__link">
+        Local Deploy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Datasets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Datasets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Datasets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stroke/" class="md-nav__link">
+        Stroke color and width
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Pie chart
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Pie chart
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#related-modifiers" class="md-nav__link">
+    Related modifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree" class="md-nav__link">
+    Tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-data-values" class="md-nav__link">
+    Show data values
+  </a>
+  
+    <nav class="md-nav" aria-label="Show data values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-3" class="md-nav__link">
+    Example 3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bars/" class="md-nav__link">
+        Bar chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchcolors/" class="md-nav__link">
+        Branch colors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchlabel/" class="md-nav__link">
+        Branch label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchmarker/" class="md-nav__link">
+        Branch marker
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafclr/" class="md-nav__link">
+        Leaf color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafbkclr/" class="md-nav__link">
+        Leaf background color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaflabdeco/" class="md-nav__link">
+        Leaf label Decoration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafann/" class="md-nav__link">
+        Leaf annotation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafImg/" class="md-nav__link">
+        Leaf images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clrstripshape/" class="md-nav__link">
+        Color strips and color shapes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protdomain/" class="md-nav__link">
+        Protein domains
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grouplabel/" class="md-nav__link">
+        Group label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dotplots/" class="md-nav__link">
+        Dotplot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heatmap/" class="md-nav__link">
+        Heatmap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bootstrapvalstyle/" class="md-nav__link">
+        Bootstrapvalue style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../columnplots/" class="md-nav__link">
+        Column plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collapseintnodes/" class="md-nav__link">
+        Collapse internal nodes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        Timeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genesynteny/" class="md-nav__link">
+        Gene Synteny
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Pie chart</h1>
+                
+                <div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><b>notes on preparing your dataset!!</b></p>
+<ul>
+<li>please always use TAB to separate the modifiers and their values.</li>
+<li>some modifiers should not be used in combination, e.g. !area and !radius are mutually exclusive.</li>
+<li>However if both are used (accidentally), only the last one will be used.</li>
+<li>if a modifier is used (accidentally) multiple tiles, only the last one will be used.</li>
+<li>the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored</li>
+</ul>
+</div>
+<h4 id="related-modifiers">Related modifiers</h4>
+<div class="admonition note">
+<p>(not all datasets support these modifiers)</p>
+<table>
+<thead>
+<tr>
+<th align="center">Key (case insensitive)</th>
+<th align="center">Value</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">!minradius</td>
+<td align="center">any float number &gt; 0</td>
+<td align="center">minimal pixel radius of the pies</td>
+</tr>
+<tr>
+<td align="center">!maxradius</td>
+<td align="center">any float number &gt; 0</td>
+<td align="center">maximal pixel radius of the pies</td>
+</tr>
+<tr>
+<td align="center">!area</td>
+<td align="center">none</td>
+<td align="center">use user inputs as the areas of the pie charts</td>
+</tr>
+<tr>
+<td align="center">!radius</td>
+<td align="center">none</td>
+<td align="center">use user inputs as the radiuses of the pie charts</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="tree">Tree</h4>
+<div class="highlight"><pre><span></span><code>((((((((((Saccharomyces_cerevisiae:0.054377,Saccharomyces_paradoxus:0.039196)Saccharomyces_subclade:0.035915,Saccharomyces_mikatae:0.082075)Saccharomyces_subclade:0.054132,Saccharomyces_bayanus:0.128022)Saccharomyces:0.485857,Candida_glabrata:0.874698)Saccharomycetaceae_subclade:0.060179,Naumovia_castellii:0.761269)Saccharomycetaceae_subclade:0.182516,(Lachancea_waltii:0.700985,(Kluyveromyces_lactis:0.770604,Agossypii:0.758273)Kluyveromyces:0.118441)Saccharomycetaceae_subclade:0.146942)Saccharomycetaceae:1.069627,(Debaryomyces_hansenii:0.591048,Candida_albicans:0.851762)Saccharomycetales_subclade:0.866539)Saccharomycetales_subclade:0.844816,Yarrowia_lipolytica:1.745091)Saccharomycetales:0.650477,(Emericella_nidulans:0.618015,(Magnaporthe_grisea:0.446021,(Neurospora_crassa:0.412753,Gibberella_zeae:0.414866)Sordariomycetes_subclade:0.071418)Sordariomycetes:0.318914)Pezizomycotina:0.873484)Ascomycota_subclade:0.955079,Schizosaccharomyces_pombe:0.952249);
+</code></pre></div>
+<details class="example"><summary>Example</summary><h4 id="example-1">Example 1</h4>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetPieCharts_piechart_overview.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>## for evolview; Yeast
+!Groups	WGD,SSD
+!colors	#9F0251,#4D8963
+!legendstyle	circle
+!title	Duplication mechanism
+!opacity	0.8
+Saccharomyces_cerevisiae,Saccharomyces_paradoxus	0,19
+Saccharomyces_cerevisiae,Saccharomyces_mikatae	0,20
+Saccharomyces_cerevisiae,Saccharomyces_bayanus	0,18
+Saccharomyces_cerevisiae,Candida_glabrata	0,22
+Saccharomyces_cerevisiae,Naumovia_castellii	862,0
+Saccharomyces_cerevisiae,Lachancea_waltii	0,29
+Saccharomyces_cerevisiae,Candida_albicans	0,53
+Saccharomyces_cerevisiae,Yarrowia_lipolytica	0,26
+Saccharomyces_cerevisiae,Neurospora_crassa	0,169
+</code></pre></div>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>an internal branch / node is identified by the names of two leaf nodes; the former is the last common ancestor of the latter</li>
+<li>the values of an internal branches are separated by ",", e.g. 0,19</li>
+<li>the number of values of all internal nodes should be the same (two in this dataset)</li>
+<li>the same number of colors should be provided by "!colors" ("#9F0251,#4D8963" in this case)</li>
+<li>and the same number of "groups" should also provided by "!groups" </li>
+</ul>
+</div>
+<details class="example"><summary>Example</summary><h4 id="example-2">Example 2</h4>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetPieCharts_peichart_example2.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code># for evolview; Yeast
+## created at may 25, 2011
+!Groups	WGD-O,WGD-N,SSD-O,SSD-N
+!colors	#9F0251,#f88ef9,#effc00,#4D8963
+!legendstyle	circle
+!title	overlap with other duplicates
+!opacity	0.8
+Saccharomyces_cerevisiae,Saccharomyces_paradoxus	0,0,24,14
+Saccharomyces_cerevisiae,Saccharomyces_mikatae	0,0,14,11
+Saccharomyces_cerevisiae,Saccharomyces_bayanus	0,0,13,16
+Saccharomyces_cerevisiae,Candida_glabrata	0,0,4,18
+Saccharomyces_cerevisiae,Naumovia_castellii	77,792,0,0
+Saccharomyces_cerevisiae,Lachancea_waltii	0,0,12,28
+Saccharomyces_cerevisiae,Candida_albicans	0,0,18,42
+Saccharomyces_cerevisiae,Yarrowia_lipolytica	0,0,11,16
+Saccharomyces_cerevisiae,Neurospora_crassa	0,0,28,143
+</code></pre></div>
+</details>
+<h3 id="show-data-values">Show data values</h3>
+<table>
+<thead>
+<tr>
+<th align="center">modifiers</th>
+<th align="center">alternative value</th>
+<th align="center">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">show = 1</td>
+<td align="center">0</td>
+<td align="center">show or hide data values; optional; the data values will be shown if omitted</td>
+</tr>
+<tr>
+<td align="center">fontsize=12</td>
+<td align="center">any integer</td>
+<td align="center">set font size; optional; default = 10</td>
+</tr>
+<tr>
+<td align="center">fontcolor=red</td>
+<td align="center">any valid HTML color name such as 'darkred' and hex color code such as '#FF0000'</td>
+<td align="center">set text color; optional; default = black</td>
+</tr>
+<tr>
+<td align="center">fontitalic=1</td>
+<td align="center">0</td>
+<td align="center">set font italic; optional; default = 0</td>
+</tr>
+</tbody>
+</table>
+<details class="example"><summary>Example</summary><h4 id="example-3">Example 3</h4>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetPieCharts_piechart_showdatavalue2.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>## for evolview; Yeast
+## created at may 25, 2011
+!Groups	WGD-O,WGD-N,SSD-O,SSD_N
+!colors	#9F0251,#f88ef9,#effc00,#4D8963
+!legendstyle	rect
+!title	overlap with WGDs
+!opacity	0.8
+!showlegends	0
+!showDataValue	show=1,fontsize=12,fontcolor=darkblue,titalic=1
+Saccharomyces_cerevisiae,Saccharomyces_paradoxus	0,0,11,27
+Saccharomyces_cerevisiae,Saccharomyces_mikatae	0,0,0,25
+Saccharomyces_cerevisiae,Saccharomyces_bayanus	0,0,4,25
+Saccharomyces_cerevisiae,Candida_glabrata	0,0,2,20
+Saccharomyces_cerevisiae,Naumovia_castellii	869,0,0,0
+Saccharomyces_cerevisiae,Lachancea_waltii	0,0,0,40
+Saccharomyces_cerevisiae,Candida_albicans	0,0,9,51
+Saccharomyces_cerevisiae,Yarrowia_lipolytica	0,0,7,20
+Saccharomyces_cerevisiae,Neurospora_crassa	0,0,20,151
+</code></pre></div>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../stroke/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Stroke color and width
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../bars/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Bar chart
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Evolgenius.info.Subramanian et al. Evolview v3 Nucleic Acids Res https://doi.org/10.1093/nar/gkz357
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

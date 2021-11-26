@@ -1,0 +1,1089 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User documentation for Evolview.">
+      
+      
+      
+        <meta name="author" content="Evolgenius Team">
+      
+      
+        <link rel="canonical" href="https://www.evolgenius.info/help/dataset/dotplots/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>Dotplot - Evolview documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tree" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Evolview documentation" class="md-header__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Evolview documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dotplot
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Evolview documentation" class="md-nav__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Evolview documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        Quick start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verhistory/" class="md-nav__link">
+        Version history
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../locdeploy/" class="md-nav__link">
+        Local Deploy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Datasets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Datasets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Datasets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stroke/" class="md-nav__link">
+        Stroke color and width
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../piechart/" class="md-nav__link">
+        Pie chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bars/" class="md-nav__link">
+        Bar chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchcolors/" class="md-nav__link">
+        Branch colors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchlabel/" class="md-nav__link">
+        Branch label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchmarker/" class="md-nav__link">
+        Branch marker
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafclr/" class="md-nav__link">
+        Leaf color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafbkclr/" class="md-nav__link">
+        Leaf background color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaflabdeco/" class="md-nav__link">
+        Leaf label Decoration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafann/" class="md-nav__link">
+        Leaf annotation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafImg/" class="md-nav__link">
+        Leaf images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clrstripshape/" class="md-nav__link">
+        Color strips and color shapes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protdomain/" class="md-nav__link">
+        Protein domains
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grouplabel/" class="md-nav__link">
+        Group label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Dotplot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Dotplot
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tree" class="md-nav__link">
+    Tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-modifiers" class="md-nav__link">
+    Supported modifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-dotplots-modifier" class="md-nav__link">
+    The !dotplots modifier
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strokes" class="md-nav__link">
+    Strokes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-data-value" class="md-nav__link">
+    Show data value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hide-a-value-or-a-range-of-values" class="md-nav__link">
+    Hide a value or a range of values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customise-column-label-styles" class="md-nav__link">
+    Customise column label styles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heatmap/" class="md-nav__link">
+        Heatmap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bootstrapvalstyle/" class="md-nav__link">
+        Bootstrapvalue style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../columnplots/" class="md-nav__link">
+        Column plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collapseintnodes/" class="md-nav__link">
+        Collapse internal nodes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        Timeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genesynteny/" class="md-nav__link">
+        Gene Synteny
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Dotplot</h1>
+                
+                <h4 id="tree">Tree</h4>
+<div class="highlight"><pre><span></span><code>(A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
+</code></pre></div>
+<p>Example dataset:
+<div class="highlight"><pre><span></span><code>##dot plots
+!groups	dot 1,dot 2,dot 3
+!colors	#028482,#7ABA7A,yellow
+!title	Example of dot plot
+# -- legends --
+!legendstyle	circle
+!showLegends	1
+## -- if !scalebycol is set to 1, each column of data will be scaled independently
+!scalebycol	0
+!byarea	1
+# ---- grid and grid label / group label are also supported --
+!grid	1
+!gridlabel	1
+# stroke and stroke color also work here
+!defaultStrokeColor	pink
+#!defaultStrokeWidth	2
+# here shape can be &#39;rect&#39; or &#39;circle&#39;; roundedcorner only applies to &#39;rect&#39; shapes ...
+!dotplots	shape=circle,margin=2,colwidth=30,roundedcorner=3
+## -- show data value works at here as well --
+!showdataValue	show=1,fontsize=12,fontcolor=black
+A	8,13,5
+B	10,20,20
+C	8,9,7
+D	20,20,20
+</code></pre></div></p>
+<h4 id="supported-modifiers">Supported modifiers</h4>
+<p>The following 'modifiers' (Key-Value pairs) are supported for dot plots:</p>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>Key (case insensitive)</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>universal modifiers</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>!Groups or !LegendText</td>
+<td>comma separated text</td>
+<td>Legend texts; for example 'group_a,group_b,group_c'</td>
+</tr>
+<tr>
+<td>!LegendStyle or !Style</td>
+<td>rect or circle or star</td>
+<td>shapes to be plotted before the legend texts; default = rect</td>
+</tr>
+<tr>
+<td>!LegendColors or !Colors</td>
+<td>comma separated color codes or names</td>
+<td>colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ; note the number of colors should match the number of legend fields</td>
+</tr>
+<tr>
+<td>!Title or !Legend</td>
+<td>text</td>
+<td>title of the legend; default = name of the dataset</td>
+</tr>
+<tr>
+<td>!ShowLegends</td>
+<td>0 or 1</td>
+<td>0 : hide legends; 1 : show legends</td>
+</tr>
+<tr>
+<td>!opacity</td>
+<td>float number between 0 to 1</td>
+<td>opacity of the dataset</td>
+</tr>
+<tr>
+<td><strong>modifiers shared with Bar Charts</strong></td>
+<td></td>
+<td>modifiers that apply to both Bar Charts and Dot Plots</td>
+</tr>
+<tr>
+<td>!grid</td>
+<td>none</td>
+<td>show a background grid</td>
+</tr>
+<tr>
+<td>!gridlabel or !axis</td>
+<td>none</td>
+<td>show grid labels (note: does not work in circular modes</td>
+</tr>
+<tr>
+<td>!defaultStrokeWidth</td>
+<td>any value &gt;= 0</td>
+<td>stroke width that applies to both legends and the chart</td>
+</tr>
+<tr>
+<td>!defaultStrokeColor</td>
+<td>any valid color name such as red and yellow and html hex color such as #FF00FF</td>
+<td>stroke color that applies to both legends and the chart; see more about stroke colors; also see the section below</td>
+</tr>
+<tr>
+<td><strong>dot plots specific</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>!scalebycol</td>
+<td>none</td>
+<td>scale the data by column, i.e. the max value in a column will take the maximum plot width of a column; default is to scale by the maximum of all data</td>
+</tr>
+<tr>
+<td><strong>other modifiers</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>!dotplots</td>
+<td></td>
+<td>see section below for more details</td>
+</tr>
+<tr>
+<td>!showdataValue</td>
+<td></td>
+<td>see section show data value for more details</td>
+</tr>
+<tr>
+<td>!columnLabelStyle</td>
+<td></td>
+<td>tweak column label styles; see 'column label style' below for detail</td>
+</tr>
+</tbody>
+</table>
+</div>
+<details class="tip" open="open"><summary>Tip</summary><p><strong><em>notes on preparing your datasets!!</em></strong></p>
+<ol>
+<li>please always use TAB to separate the modifiers and their values.</li>
+<li>if a modifier is used (accidentally) multiple tiles, only the last one will be used.</li>
+<li>the "data" part of this dataset can only contain two columns of tab-delimited texts; the third column, if presents, will be ignored</li>
+<li>please also always use TAB to separate the columns in the data section.</li>
+</ol>
+</details>
+<div class="admonition note">
+<h4 id="the-dotplots-modifier">The !dotplots modifier</h4>
+<p>The 'value' of the modifier <strong>!dotplots</strong> can be any combination of the following, separated by a ",":</p>
+<div class="highlight"><pre><span></span><code>shape=circle,margin=2,colwidth=30,roundedcorner=3
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>alternative value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shape = circle</td>
+<td>rect</td>
+<td>shape of the dot plots; default is circle</td>
+</tr>
+<tr>
+<td>colwidth=30</td>
+<td>any integer &gt; 0</td>
+<td>set pixel width per column ; optional; default = 20</td>
+</tr>
+<tr>
+<td>margin=2</td>
+<td>any integer &gt;= 0</td>
+<td>set pixel space between columns; optional; default = 0</td>
+</tr>
+<tr>
+<td>roundedcorner=1</td>
+<td>any integer &gt;= 0</td>
+<td>set rounded corner in pixels for rectangular; valid when shape=rect; optional, default = 0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="strokes">Strokes</h4>
+<p>User can choose different stroke colors for different columns using the modifier !colors; for example, by simply changing the value of !colors to :</p>
+<div class="highlight"><pre><span></span><code>#028482:blue,#7ABA7A:gold,#B76EB8:darkgrey
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>##dot plots
+!groups	dot 1,dot 2,dot 3
+## -- set stroke color --
+!colors	#028482:blue,#7ABA7A:gold,#B76EB8:darkgrey
+## -- set stroke width to 2 --
+#!defaultStrokeColor	pink
+!defaultStrokeWidth	2
+!title	Example of dot plot
+!legendstyle	circle
+!showLegends	1
+!byarea	1
+!grid	1
+!gridlabel	1
+!dotplots	shape=circle,margin=2,colwidth=30,roundedcorner=3
+!showdataValue	show=1,fontsize=12,fontcolor=white
+A	8,13,5
+B	10,20,20
+C	8,9,7
+D	20,20,20
+</code></pre></div>
+<p><img alt="" src="/img/DatasetDotplots_dotplots_stroke.png" /></p>
+<h4 id="show-data-value">Show data value</h4>
+<p>The 'value' of the modifier <strong>!showdataValue</strong> can be any combination of the following, separated by a ",":</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>alternative value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show = 1</td>
+<td>0</td>
+<td>show or hide data values; optional; the data values will be shown if omitted</td>
+</tr>
+<tr>
+<td>fontsize=12</td>
+<td>any integer</td>
+<td>set font size; optional; default = 10</td>
+</tr>
+<tr>
+<td>fontcolor=red</td>
+<td>any value color name</td>
+<td>set text color; optional; default = 'black' or 'white' depending on the background color</td>
+</tr>
+<tr>
+<td>fontitalic=1</td>
+<td>0</td>
+<td>set font italic; optional; default = 0</td>
+</tr>
+<tr>
+<td>valuesToHide=value1, or valuesToHide=value1:value2</td>
+<td>any number(s)</td>
+<td>specify a single value to hide, e.g. valuesToHide=9, or a range of values to hide, e.g. valuesToHide=0.5:10 (inclusive). Default is to hide none</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>NOTE</em></strong>: when 'fontcolor' is omitted, the default font color will be either 'black' or 'white' depending the background color, for example:</p>
+<div class="highlight"><pre><span></span><code>!groups	dot 1,dot 2,dot 3
+!colors	#028482,#7ABA7A,yellow
+!title	Example of dot plot
+!legendstyle	circle
+!showLegends	1
+!byarea	1
+!grid	1
+!gridlabel	1
+!defaultStrokeColor	pink
+!dotplots	shape=circle,margin=2,colwidth=30,roundedcorner=3
+!showdataValue	show=1,fontsize=12,fontitalic=0,textalign=start
+A	8,13,5
+B	10,20,20
+C	8,9,7
+D	20,20,20
+</code></pre></div>
+<p>The purpose here is to ensure the readability of the texts on any background colors.</p>
+<p><img alt="" src="/img/DatasetDotplots_dotplots_default_fontcolor.png" /></p>
+<p>In this particular case, if we force the text color to 'white':</p>
+<div class="highlight"><pre><span></span><code>!groups	dot 1,dot 2,dot 3
+!colors	#028482,#7ABA7A,yellow
+!title	Example of dot plot
+!legendstyle	circle
+!showLegends	1
+!byarea	1
+!grid	1
+!gridlabel	1
+!defaultStrokeColor	pink
+!dotplots	shape=circle,margin=2,colwidth=30,roundedcorner=3
+!showdataValue	show=1,fontsize=12,fontcolor=white
+A	8,13,5
+B	10,20,20
+C	8,9,7
+D	20,20,20
+</code></pre></div>
+<p>... the texts of the 3rd column where the background color is yellow are unreadable:</p>
+<p><img alt="" src="/img/DatasetDotplots_dotplots_force_fontwhite.png" /></p>
+<h4 id="hide-a-value-or-a-range-of-values">Hide a value or a range of values</h4>
+<p>Now we are going to hide values from 5 to 9 (inclusive):</p>
+<div class="highlight"><pre><span></span><code>!groups	dot 1,dot 2,dot 3
+!colors	#028482,#7ABA7A,yellow
+!title	Example of dot plot
+!legendstyle	circle
+!showLegends	1
+!byarea	1
+!grid	1
+!gridlabel	1
+!defaultStrokeColor	pink
+!dotplots	shape=circle,margin=2,colwidth=30,roundedcorner=3
+!showdataValue	show=1,fontsize=12,fontitalic=0,textalign=start,valuesToHide=5:9
+A	8,13,5
+B	10,20,20
+C	8,9,7
+D	20,20,20
+</code></pre></div>
+<p><img alt="" src="/img/DatasetDotplots_dotplots_values_hidden.png" /></p>
+<h4 id="customise-column-label-styles">Customise column label styles</h4>
+<p><strong><em>NOTE</em></strong>: modifier <strong>!columnLabelStyle</strong> is also supported by heatmap.
+The 'value' of the modifier <strong>!columnLabelStyle</strong> can be any combination of the following, separated by a ","; for example:</p>
+<div class="highlight"><pre><span></span><code>show=1,fontsize=14,fontitalic=0,fontbold=1,textangle=60,fontcolor=red
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>alternative valu</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show = 1</td>
+<td>0</td>
+<td>show or hide data values; optional; if omitted, the column lables will be shown</td>
+</tr>
+<tr>
+<td>fontsize=12</td>
+<td>any integer</td>
+<td>set font size; optional; default = 10</td>
+</tr>
+<tr>
+<td>fontcolor=red</td>
+<td>any value color name</td>
+<td>set text color for all labels; optional; default = colors matching the corresponding columns</td>
+</tr>
+<tr>
+<td>fontitalic=1</td>
+<td>0</td>
+<td>set font italic; optional; default = 0</td>
+</tr>
+<tr>
+<td>fontbold=1</td>
+<td>0</td>
+<td>set font weight to bold; optional; default = 0</td>
+</tr>
+<tr>
+<td>textangle=-60</td>
+<td>any number(s)</td>
+<td>set rotation angle; optional, default = -60</td>
+</tr>
+</tbody>
+</table>
+<details class="example"><summary>Example</summary><h4 id="example-1">Example 1</h4>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetDotplots_dotplots_column_label_customized.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>##dot plots
+!groups	dot 1,dot 2,dot 3
+## -- set stroke color --
+!colors	#028482:blue,#7ABA7A:gold,#B76EB8:darkgrey
+## -- set stroke width to 2 --
+#!defaultStrokeColor	pink
+!defaultStrokeWidth	2
+!title	Example of dot plot
+!legendstyle	circle
+!showLegends	1
+!byarea	1
+!grid	1
+!gridlabel	1
+!dotplots	shape=circle,margin=2,colwidth=30,roundedcorner=3
+!showdataValue	show=1,fontsize=12,fontcolor=white,valuestohide=5:9
+
+!columLabelStyle	show=1,fontsize=14,fontbold=1,textangle=60
+
+A	8,13,5
+B	10,20,20
+C	8,9,7
+D	20,20,20
+</code></pre></div>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../grouplabel/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Group label
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../heatmap/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Heatmap
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Evolgenius.info.Subramanian et al. Evolview v3 Nucleic Acids Res https://doi.org/10.1093/nar/gkz357
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

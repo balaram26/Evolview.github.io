@@ -1,0 +1,1070 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User documentation for Evolview.">
+      
+      
+      
+        <meta name="author" content="Evolgenius Team">
+      
+      
+        <link rel="canonical" href="https://www.evolgenius.info/help/dataset/columnplots/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>Column plot - Evolview documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Evolview documentation" class="md-header__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Evolview documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Column plot
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Evolview documentation" class="md-nav__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Evolview documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        Quick start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verhistory/" class="md-nav__link">
+        Version history
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../locdeploy/" class="md-nav__link">
+        Local Deploy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Datasets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Datasets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Datasets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stroke/" class="md-nav__link">
+        Stroke color and width
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../piechart/" class="md-nav__link">
+        Pie chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bars/" class="md-nav__link">
+        Bar chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchcolors/" class="md-nav__link">
+        Branch colors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchlabel/" class="md-nav__link">
+        Branch label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchmarker/" class="md-nav__link">
+        Branch marker
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafclr/" class="md-nav__link">
+        Leaf color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafbkclr/" class="md-nav__link">
+        Leaf background color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaflabdeco/" class="md-nav__link">
+        Leaf label Decoration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafann/" class="md-nav__link">
+        Leaf annotation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafImg/" class="md-nav__link">
+        Leaf images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clrstripshape/" class="md-nav__link">
+        Color strips and color shapes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../protdomain/" class="md-nav__link">
+        Protein domains
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grouplabel/" class="md-nav__link">
+        Group label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dotplots/" class="md-nav__link">
+        Dotplot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heatmap/" class="md-nav__link">
+        Heatmap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bootstrapvalstyle/" class="md-nav__link">
+        Bootstrapvalue style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Column plot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Column plot
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree" class="md-nav__link">
+    Tree:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-modifiers" class="md-nav__link">
+    Supported modifiers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-columnplots-modifier" class="md-nav__link">
+    the !columnPlots modifier
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-a-column-of-data-for-visualisation" class="md-nav__link">
+    prepare a column of data for visualisation
+  </a>
+  
+    <nav class="md-nav" aria-label="prepare a column of data for visualisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1" class="md-nav__link">
+    Example 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2" class="md-nav__link">
+    Example 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3" class="md-nav__link">
+    Example 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4" class="md-nav__link">
+    Example 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5" class="md-nav__link">
+    Example 5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-6" class="md-nav__link">
+    Example 6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-7" class="md-nav__link">
+    Example 7
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-column-plots-to-collapsed-trees" class="md-nav__link">
+    Add column plots to collapsed trees
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collapseintnodes/" class="md-nav__link">
+        Collapse internal nodes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        Timeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genesynteny/" class="md-nav__link">
+        Gene Synteny
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Column plot</h1>
+                
+                <h3 id="overview">Overview</h3>
+<p>Column plots provides a flexable way of visualising summary information of species in a phylogenetic tree, it was inspired by the figure 6 (the column plots on the right) of a recent publication in eLife:</p>
+<p><img alt="" src="/img/DatasetColumnPlots_elife2015.png" /></p>
+<div class="admonition note">
+<p>source: <em>Laumer, Christopher E., Andreas Hejnol, and Gonzalo Giribet. "Nuclear genomic signals of the ‘microturbellarian’roots of platyhelminth evolutionary innovation." eLife 4 (2015): e05503.</em></p>
+<p><em>note</em>: thanks to Desmond Ramirez of the UCSB who brought this figure to our attention.</p>
+<p>Here is our implementation in evolview:</p>
+<p><img alt="" src="/img/DatasetColumnPlots_columnplots_popup.png" /></p>
+</div>
+<h3 id="tree">Tree:</h3>
+<div class="highlight"><pre><span></span><code>(A:0.1,(B:0.2,(C:0.3,D:0.4)100:0.05)100:0.1)90:0.43;
+</code></pre></div>
+<p>Dataset:</p>
+<div class="highlight"><pre><span></span><code>## --
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45,spacebetweencolumns=15
+
+## a column of data starts with a &#39;namedcolumn&#39;,
+#it defines global options for the corresponding column
+namedcolumn=thermopiles,color=purple:darker
+	## followed by the following fragments
+	from=A,to=C
+	from=D,color=white:purple,text=?,width=20,style=circle,textangle=0
+
+## -- 2nd column
+namedcolumn=habitat,width=15
+	from=A,to=B,text=aquatic,textangle=-90,color=white:lightblue
+	from=C,to=D,text=?,textangle=0,color=white:darkgrey
+
+## -- 3rd column
+namedcolumn=fast evolving,color=lightgreen:darker
+	from=A,style=star
+	from=B,to=D
+	from=C,style=none,text=*,textangle=0,width=20
+</code></pre></div>
+<div class="admonition note">
+<h3 id="supported-modifiers">Supported modifiers</h3>
+<p>Due to the complexity of the plot, we adopted here a new approach for the dataset, thus many so-called universal modifiers are no longer supported except those that are related to the legend. Below are universal modifiers that are still supported by Column plots:</p>
+<table>
+<thead>
+<tr>
+<th>Key (case insensitive)</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>!Groups or !LegendText</td>
+<td>comma separated text</td>
+<td>Legend texts; for example 'group_a,group_b,group_c'</td>
+</tr>
+<tr>
+<td>!LegendStyle or !Style</td>
+<td>rect or circle or star</td>
+<td>shapes to be plotted before the legend texts; default = rect</td>
+</tr>
+<tr>
+<td>!LegendColors or !Colors</td>
+<td>comma separated color codes or names</td>
+<td>colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ;note the number of colors should match the number of legend fields</td>
+</tr>
+<tr>
+<td>!Title or !Legend</td>
+<td>text</td>
+<td>title of the legend; default = name of the dataset</td>
+</tr>
+<tr>
+<td>!ShowLegends</td>
+<td>0 or 1</td>
+<td>0 : hide legends; 1 : show legends</td>
+</tr>
+<tr>
+<td>!opacity</td>
+<td>float number between 0 to 1</td>
+<td>opacity of the dataset</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<h3 id="the-columnplots-modifier">the !columnPlots modifier</h3>
+<p>here we introduce a new modifier <strong>!columnPlots</strong> to allow users to control the following aspect of the plot globally:
+* fill and text color
+* default stroke color
+* default stroke width
+* font size, italic, bold and rotation angle
+* column width and space between columns</p>
+</div>
+<div class="admonition note">
+<p><strong><em>please note</em></strong> all these global options can be overriden by local settings.</p>
+<p>A typical !columnPlots would look like the following (NOTE: this is written in one line, not multiple lines):</p>
+<div class="highlight"><pre><span></span><code>!columnPlots    width=10,spaceBetweenColumns=10,color=green:red,strokewidth=1,textangle=-60,style=rect,roundedcorner=5,fontsize=14
+</code></pre></div>
+<p>please remember always use a 'TAB' character to separate !columnPlots from its value.</p>
+<p>The value of !columnPlots is mandatory; it can be any of the following options, individually or in combination:</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>alternative value</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width=10</td>
+<td>any integer &gt;= 0</td>
+<td>set column width, default = 10</td>
+</tr>
+<tr>
+<td>spaceBetweenColumns=10</td>
+<td>any integer &gt;= 0</td>
+<td>set space between columns, default = 10</td>
+</tr>
+<tr>
+<td>style=rect</td>
+<td>any of the following:none,rect,circle,star,check,triangle</td>
+<td>style / shape to be plotted, default = rect</td>
+</tr>
+<tr>
+<td>fontsize=10</td>
+<td>any integer &gt;= 0</td>
+<td>set font size for columns labels, default = 14</td>
+</tr>
+<tr>
+<td>fontitalic=0</td>
+<td>1</td>
+<td>set font italic for columns labels, default = 0</td>
+</tr>
+<tr>
+<td>fontbold=0</td>
+<td>1</td>
+<td>set font bold for columns labels, default = 0</td>
+</tr>
+<tr>
+<td>color=red, or color=red:blue</td>
+<td>any valid html color name, e.g. green, darkblue ..., or hex html color, e.g. #FF00FF</td>
+<td>set fill and optional stroke color; fill color will be also applied to column labels, default = black; see examples below for detail</td>
+</tr>
+<tr>
+<td>strokewidth=1</td>
+<td>any integer &gt;=1</td>
+<td>set strokewidth, valid only when the strokecolor is set, default = 1; see examples below for detail</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Please note that Evolview supports the use of "darker", "brighter" and "lighter" as stroke colors. For example, the following usages are all valid:</p>
+<ul>
+<li>red:darker</li>
+<li>'#FF00FF':lighter</li>
+<li>darkblue:brighter</li>
+</ul>
+<p>When 'darker' or 'brighter'/'lighter' is used, the stroke color will be <strong><em>20% darker or brighter</em></strong> than the specified color.</p>
+<p>See <a href="/img/01_stroke_color_and_width/DatasetStroke.md">here</a> for more details.</p>
+<h3 id="prepare-a-column-of-data-for-visualisation">prepare a column of data for visualisation</h3>
+<p>As shown in the previous example, a column of data often consists of <em><strong>two parts</strong></em>,</p>
+<ol>
+<li>
+<p>a line of text starts with a mandatory filed 'namedcolumn=name of the column', followed by any numbers of the options mentioned in the table above, for example:</p>
+<ul>
+<li>namedcolumn=thermopiles,color=purple:darker</li>
+<li>namedcolumn=habitat,width=15
+the options following 'namedColumn' control the displaying styles of current column, and overrides the corresponding global options.</li>
+<li>
+<p>several lines of text, each line defines a fragment / segment to be plotted. For example:</p>
+</li>
+<li>
+<p>from=A,to=C</p>
+</li>
+<li>from=D,color=white:purple,text=?,width=20,style=circle,textangle=0
+the 'fragment' line should contain the following elements:</li>
+<li>the starting point, i.e. the name of the leaf node, of the fragment using 'from='; mandatory</li>
+<li>an optional ending point / the name of a leaf node using 'to='</li>
+<li>any numbers of the options mentioned in the above table; optional. These options control the displaying styles of current fragment, and overrides the corresponding global options</li>
+</ul>
+</li>
+</ol>
+<p>Here is an example:</p>
+<div class="highlight"><pre><span></span><code>## a column of data starts with a &#39;namedcolumn&#39;,
+##it defines global options for the corresponding column
+namedcolumn=thermopiles,color=purple:darker
+	## followed by the following fragments
+	from=A,to=C
+	from=D,color=white:purple,text=?,width=20,style=circle,textangle=0
+</code></pre></div>
+<p><img alt="" src="/img/DatasetColumnPlots_single_column.png" /></p>
+<details class="tip" open="open"><summary>Tip</summary><p><strong><em>Note</em></strong>:</p>
+<ul>
+<li>the dataset is case-insensitive</li>
+<li>the indentation at the begining of the framents is optional</li>
+</ul>
+</details>
+<details class="example" open="open"><summary>Example</summary><h4 id="example-1">Example 1</h4>
+<p>Example 1. a column with two fragments, one span three leaf nodes, while the other spans only one.:</p>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_01.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>## --
+## -- some global options
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
+
+## -- a column with two fragments, note how the stroke color is defined
+namedcolumn=thermopiles,color=lightblue:darker
+	## note: the indentation is optional
+	from=A,to=C
+	from=D
+</code></pre></div>
+</details>
+<details class="example"><summary>Example</summary><h4 id="example-2">Example 2</h4>
+<p>try change the style / shape of the fragments, however it only work when a fragment spans only one leaf node:</p>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_02.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>##
+## -- some global options
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
+
+## -- a column with two fragments, note how the stroke color is defined
+namedcolumn=thermopiles,color=lightblue:darker
+	## try change the style / shape, but it wouldn&#39;t work here
+	from=A,to=C,style=star
+    ## but, it will work here
+	from=D,style=star
+</code></pre></div>
+</details>
+<details class="example"><summary>Example</summary><h4 id="example-3">Example 3</h4>
+<p>now try change the width of the fragments:</p>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_03.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>##
+## -- some global options
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
+
+## -- set width to 20, it will apply to both fragments
+namedcolumn=thermopiles,color=lightblue:darker,width=20
+	from=A,to=C,style=star
+	from=D,style=star
+</code></pre></div>
+</details>
+<details class="example"><summary>Example</summary><h4 id="example-4">Example 4</h4>
+<p>you can change the widths of the fragments individually:</p>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_04.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>##
+## -- some global options
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
+
+## please note, width=25 here specifies the overall plot width of current column,
+##    it is thus meaningful even it is overridden later.
+namedcolumn=thermopiles,color=lightblue:darker,width=25
+	from=A,to=C,width=10
+	from=D,style=star,width=20
+</code></pre></div>
+</details>
+<details class="example"><summary>Example</summary><h4 id="example-5">Example 5</h4>
+<p>we know for sure the first three species are thermophilic, but the last one???</p>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_05.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>##
+## -- some global options
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
+
+namedcolumn=thermopiles,color=#FF33CC:darker,width=25
+	from=A,to=C,width=10
+	from=D,style=circle,color=white:darkgrey,width=20,text=?,textangle=0
+</code></pre></div>
+</details>
+<details class="example"><summary>Example</summary><h4 id="example-6">Example 6</h4>
+<p>now we'd like the readers to pay more attention to species A and C:</p>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_06.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>##
+## -- some global options
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45
+
+namedcolumn=thermopiles,color=lightblue:darker,width=25
+	from=A,to=C,width=10
+
+	## -- don&#39;t forget to set style=none
+	from=A,style=none,text=*,fontsize=16,textangle=0
+	from=C,style=none,text=*,fontsize=16,textangle=0
+
+	from=D,style=circle,color=white:darkgrey,width=20,text=?,textangle=0
+</code></pre></div>
+</details>
+<details class="example"><summary>Example</summary><h4 id="example-7">Example 7</h4>
+<p>we can have multiple columns in a dataset:</p>
+<p><img align="right" alt="Placeholder" class="zoom" src="/img/DatasetColumnPlots_example_07.png" width="400" /></p>
+<div class="highlight"><pre><span></span><code>##
+!columnplots	strokewidth=2,fontbold=1,fontsize=16,textangle=-45,spacebetweencolumns=15
+
+## a column of data starts with a &#39;namedcolumn&#39;,
+## it defines global options for the corresponding column
+namedcolumn=thermopiles,color=purple:darker
+	## followed by the following fragments
+	from=A,to=C
+	from=D,color=white:purple,text=?,width=20,style=circle,textangle=0
+
+## -- 2nd column
+namedcolumn=habitat,width=15
+	from=A,to=B,text=aquatic,textangle=90,color=white:lightblue,fontsize=14
+	from=C,to=D,text=?,textangle=0,color=white:darkgrey
+
+## -- 3rd column
+namedcolumn=fast evolving,color=lightgreen:darker
+	from=A,style=star
+	from=B,to=D
+	from=C,style=none,text=*,textangle=0,width=20
+</code></pre></div>
+</details>
+<details class="tip" open="open"><summary>Tip</summary><p><em><strong>Please NOTE:</strong></em></p>
+<ol>
+<li>the plot is optimized for cladogram and phylogram, thus it wouldn't be as pretty in circular mode</li>
+<li>please send us (evolgenius.team@gmail.com) email if you have encountered any problems using EvolView, attach your tree and datasets if necessary</li>
+<li>please also send us your suggestions and feature requests!</li>
+</ol>
+</details>
+<h3 id="add-column-plots-to-collapsed-trees">Add column plots to collapsed trees</h3>
+<p>Evolview supports collapsing at internal nodes; collapsed nodes are treated as leaf nodes. It is therefore very straightforward to add column plots to a collapsed tree. See <a href="/datasets/13_collapse_at_internal_nodes/DatasetCollapseInternalNodes.md">here</a> for more information.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../bootstrapvalstyle/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Bootstrapvalue style
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../collapseintnodes/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Collapse internal nodes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Evolgenius.info.Subramanian et al. Evolview v3 Nucleic Acids Res https://doi.org/10.1093/nar/gkz357
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

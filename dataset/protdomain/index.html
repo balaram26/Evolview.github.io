@@ -1,0 +1,886 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="User documentation for Evolview.">
+      
+      
+      
+        <meta name="author" content="Evolgenius Team">
+      
+      
+        <link rel="canonical" href="https://www.evolgenius.info/help/dataset/protdomain/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.2">
+    
+    
+      
+        <title>Protein domains - Evolview documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f955dcd.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Evolview documentation" class="md-header__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Evolview documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Protein domains
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Evolview documentation" class="md-nav__button md-logo" aria-label="Evolview documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Evolview documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        Quick start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verhistory/" class="md-nav__link">
+        Version history
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../locdeploy/" class="md-nav__link">
+        Local Deploy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Datasets
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Datasets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Datasets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stroke/" class="md-nav__link">
+        Stroke color and width
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../piechart/" class="md-nav__link">
+        Pie chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bars/" class="md-nav__link">
+        Bar chart
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchcolors/" class="md-nav__link">
+        Branch colors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchlabel/" class="md-nav__link">
+        Branch label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branchmarker/" class="md-nav__link">
+        Branch marker
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafclr/" class="md-nav__link">
+        Leaf color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafbkclr/" class="md-nav__link">
+        Leaf background color
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leaflabdeco/" class="md-nav__link">
+        Leaf label Decoration
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafann/" class="md-nav__link">
+        Leaf annotation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../leafImg/" class="md-nav__link">
+        Leaf images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clrstripshape/" class="md-nav__link">
+        Color strips and color shapes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Protein domains
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Protein domains
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-retrieval-of-domain-annotations-from-pfam" class="md-nav__link">
+    automatic retrieval of domain annotations from PFAM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tree" class="md-nav__link">
+    Tree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-domain-annotations-by-hand" class="md-nav__link">
+    Write domain annotations by hand
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-modifiers" class="md-nav__link">
+    Related modifiers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grouplabel/" class="md-nav__link">
+        Group label
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dotplots/" class="md-nav__link">
+        Dotplot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heatmap/" class="md-nav__link">
+        Heatmap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bootstrapvalstyle/" class="md-nav__link">
+        Bootstrapvalue style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../columnplots/" class="md-nav__link">
+        Column plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collapseintnodes/" class="md-nav__link">
+        Collapse internal nodes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        Timeline
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genesynteny/" class="md-nav__link">
+        Gene Synteny
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Protein domains</h1>
+                
+                <h4 id="overview">Overview</h4>
+<p>User can choose to either copy and paste the contents of the dataset by hand, upload from a text file, or retrieve automatically from public resources like PFAM.</p>
+<h4 id="automatic-retrieval-of-domain-annotations-from-pfam">automatic retrieval of domain annotations from PFAM</h4>
+<p>To retrieve domains automatically from PFAM, user can simply click the green button "retrieve data from PFAM" (see figure above).</p>
+<p>EvolView uses leaf names of current active tree to query PFAM database using the PFAM URL API. For example, if a leaf name is "KLF9_HUMAN", the URL to retrieve data will look like:</p>
+<div class="highlight"><pre><span></span><code>http://pfam.xfam.org/protein/KLF9_HUMAN?output=xml
+</code></pre></div>
+<p>The retrieved data is in XML format, as shown bellow:</p>
+<div class="highlight"><pre><span></span><code>&lt;xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;&gt;
+&lt;!-- information on UniProt entry Q13886 (KLF9_HUMAN), generated: 12:24:51 15-May-2012 --&gt;
+&lt;pfam xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+      xmlns=&quot;http://pfam.sanger.ac.uk/&quot;
+      xsi:schemaLocation=&quot;http://pfam.sanger.ac.uk/
+                          http://pfam.sanger.ac.uk/static/documents/schemas/protein.xsd&quot;
+      release=&quot;26.0&quot;
+      release_date=&quot;2011-11-17&quot;&gt;
+  &lt;entry entry_type=&quot;sequence&quot; db=&quot;uniprot&quot; db_release=&quot;2011_06&quot; accession=&quot;Q13886&quot; id=&quot;KLF9_HUMAN&quot;&gt;
+    &lt;description&gt;
+&lt;![CDATA[
+Krueppel-like factor 9
+]]&gt;
+    &lt;/description&gt;
+    &lt;taxonomy tax_id=&quot;9606&quot; species_name=&quot;Homo sapiens (Human)&quot;&gt;Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae; Homo.&lt;/taxonomy&gt;
+    &lt;sequence length=&quot;244&quot; md5=&quot;c97fb18568b42285ca3d528c6af3bd36&quot; crc64=&quot;2D1B5A5BB9D42221&quot; version=&quot;1&quot;&gt;MSAAAYMDFVAAQCLVSISNRAAVPEHGVAPDAERLRLPEREVTKEHGDPGDTWKDYCTLVTIAKSLLDLNKYRPIQTPSVCSDSLESPDEDMGSDSDVTTESGSSPSHSPEERQDPGSAPSPLSLLHPGVAAKGKHASEKRHKCPYSGCGKVYGKSSHLKAHYRVHTGERPFPCTWPDCLKKFSRSDELTRHYRTHTGEKQFRCPLCEKRFMRSDHLTKHARRHTEFHPSMIKRSKKALANAL&lt;/sequence&gt;
+    &lt;matches&gt;
+      &lt;match accession=&quot;PF13465&quot; id=&quot;zf-H2C2_2&quot; type=&quot;Pfam-A&quot;&gt;
+        &lt;location start=&quot;189&quot; end=&quot;212&quot; ali_start=&quot;190&quot; ali_end=&quot;212&quot;
+hmm_start=&quot;2&quot; hmm_end=&quot;24&quot; evalue=&quot;5.4e-05&quot; bitscore=&quot;32.80&quot; /&gt;
+      &lt;/match&gt;
+      &lt;match accession=&quot;PF13465&quot; id=&quot;zf-H2C2_2&quot; type=&quot;Pfam-A&quot;&gt;
+        &lt;location start=&quot;159&quot; end=&quot;186&quot; ali_start=&quot;159&quot; ali_end=&quot;186&quot; hmm_start=&quot;1&quot; hmm_end=&quot;26&quot; evalue=&quot;0.0036&quot; bitscore=&quot;27.00&quot; /&gt;
+      &lt;/match&gt;
+      &lt;match accession=&quot;PB021241&quot; id=&quot;Pfam-B_21241&quot; type=&quot;Pfam-B&quot;&gt;
+        &lt;location start=&quot;1&quot; end=&quot;158&quot; /&gt;
+      &lt;/match&gt;
+    &lt;/matches&gt;
+  &lt;/entry&gt;
+&lt;/pfam&gt;
+</code></pre></div>
+<p>EvolView will parse the retrieved data, and paste the results to the text box bellow the button.
+By default, several "modifiers" will be automatically generated and added to the beginning of the dataset (see the figure above).</p>
+<h4 id="tree">Tree</h4>
+<div class="highlight"><pre><span></span><code>((((((((KLH20_XENLA:0.2153,((Q86BQ6_DROME:0.2096,Q7PXP7_ANOGA:0.1568)0.85:0.2135,
+((Q6PFE1_MOUSE:0.1521,Q6PGA3_MOUSE:0.2172)0.76:0.07388,Q8CCY1_MOUSE:0.1753)
+0.95:0.3455)0.91:0.3338)0.86:0.2197,((KLHL2_HUMAN:0.08975,(Q8N4I8_HUMAN:0,
+(Q18670_CAEEL:0.7637,KLH12_XENLA:0.2797)0.93:0.4654)0.88:0.1558)0.82:0.1293,
+(KELC_ANOST:0.1794,KELC_DROME:0.1742)0.9:0.2075)0.94:0.2985)0.29:0.04967,
+(((Q8AW66_DANRE:0.1259,KLHL6_MOUSE:0.4485)0.98:0.4727,(KBTBC_MOUSE:0.6317,
+(KBTB8_HUMAN:0.1993,Q8JU17_LSDV:1.141)0.9:0.5857)0:0)0.82:0.2108,
+((((KEAP1_RAT:0.1349,Q8JIM0_DANRE:0.2407)0.95:0.4784,Q7KSF5_DROME:0.5027)
+0:0.06034,GAN_MOUSE:0.8177)0.73:0.1347,(((KLH38_MOUSE:0.668,
+((Q7SYC4_DANRE:0.3353,Q6NRT8_XENLA:0.2334)0.88:0.275,KLH29_MOUSE:0.5729)
+0:0.03749)0.81:0.1223,((((O61795_CAEEL:0.6747,(((Q9Q8G2_9POXV:0.6023,
+Q8V3G0_SWPV:0.6185)0.72:0.4076,Q9DHH3_YLDV:0.3759)0:0.1171,KBTB1_CWPXG:0.8456)
+0.98:1.164)0:0.0495,(Q9W6R2_TAKRU:0.2735,Q9W6R3_TAKRU:0.6931)0.84:0.2291)0:0,
+(Q7Q1T2_ANOGA:0.5814,Q7ZVF7_DANRE:1.067)0.014:0.1921)0.81:0.1635,
+((Q6P4N4_XENTR:0.1512,Q7SYD2_DANRE:0.4405)0.8:0.1838,KBTBA_HUMAN:0.02277)
+1:0.5769)0.57:0.0335)0.27:0.06992,Q6GKZ1_DROME:0.7147)0.85:0.1895)0:0.00953)
+0.65:0.08898)0.72:0.1007,(Q7QHD7_ANOGA:0.3004,Q9VGE5_DROME:0.3033)0.95:0.262)0:0,
+(((((ENC2_MOUSE:0.3014,(ENC2_XENLA:0.05783,((Q6TEQ2_DANRE:0.09609,
+Q6GNW3_XENLA:0.2931)0.86:0.1782,ENC1_HUMAN:0.2725)0.95:0.3066)0.8:0.1403)
+0.98:0.551,Q6IR89_XENLA:0.415)0.75:0.07768,KBTB3_HUMAN:1.07)0.67:0.1062,
+KLH28_MOUSE:0.9934)0.61:0.08269,(KLH17_MOUSE:0.4396,(Q6IQ87_DANRE:0.1242,
+KLH18_HUMAN:0.08026)0.79:0.1194)0.73:0.1527)0.86:0.1814)0.73:0.04515,
+(Q8IQ29_DROME:1.127,KLH23_MOUSE:0.7506)0.83:0.6781)0.81:0.1032,
+((O18147_CAEEL:0.4752,(Q6GNZ5_XENLA:0.1637,IPP_MOUSE:0.1366)0.93:0.3711)
+0.81:0.1438,KLHL8_MOUSE:0.6621)0:0)0.83:0.2138,(Q6DJ21_XENTR:0.5388,
+(((Q9VK21_DROME:0.2861,Q7PMB5_ANOGA:0.3132)0.95:0.4708,((((Q8IH95_DROME:1.015,
+Q9W4S3_DROME:1.086)0.66:0.1906,Q9W4L5_DROME:0.4058)0.91:0.7326,
+((((Q9W2S3_DROME:0.2141,O16313_CAEEL:0.8251)0.3:0.1505,(Q8C2V5_MOUSE:0.3688,
+Q6GML3_DANRE:0.2594)0.94:0.3389)0:0.04204,Q7QI84_ANOGA:0.3114)0.88:0.4656,
+(BTBDH_MOUSE:0.1753,BTBDH_XENLA:0.1789)0.96:0.803)0.84:0.4615)0.6:0.1801,
+((O72746_COWPX:1.098,(Q8JTN6_LSDV:0.1404,Q8JTM8_LSDV:1.095)0.82:0.7468)
+0.84:0.6953,P87597_COWPX:1.193)0.69:0.3544)0.79:0.2198)0.63:0.08743,
+((((KLH21_DANRE:0.1926,KLH21_HUMAN:0.5162)0.59:0.2868,(KLH31_MOUSE:0.2558,
+KLH31_DANRE:0.04945)0.96:0.5586)0.76:0.2286,KLH30_XENLA:1.462)0.099:0.209,
+(Q6DE07_XENLA:0.4094,(KLH26_MOUSE:0.5299,KLH36_HUMAN:1.102)0:0.09303)0.93:0.4958)
+0.12:0.124)0.77:0.173)0.83:0.00212);
+</code></pre></div>
+<p>Second, go to the "Annotation upload" tab, click the "protein domain" icon, and then click the "retrieve data from PFAM" icon in the dialogbox. User will get a busy message during the data retrieval.
+Last, click the "Submit" button if there is no error, the domains will be plotted next to the tree (only partial plot is shown):</p>
+<p><img alt="" src="/img/DatasetProteinDomain_proteindomain.png" /></p>
+<h4 id="write-domain-annotations-by-hand">Write domain annotations by hand</h4>
+<p>A typical domain annotation for a protein looks like the following:</p>
+<div class="highlight"><pre><span></span><code>KLF9_HUMAN	244	189,212,zf-H2C2_2,Pfam-A,,,PF13465,5.4e-05,32.80	159,186,zf-H2C2_2,Pfam-A,,,PF13465,0.0036,27.00
+</code></pre></div>
+<p>The first two columns are protein name and protein length, respectively. The third and four columns are two domains for this protein. More columns can be appended to the end of the same line.</p>
+<p><strong>Columns are separated by a single 'tab' symbol</strong>, so that user can prepare the annotation using any standard spreadsheet program (for example Office Excel, iWorks Numbers and LibreOffice Calc).</p>
+<p>Typically a domain-architecture column contains the following nine fields separated by ","s:</p>
+<p><img alt="" src="/img/DatasetProteinDomain_proteindomain_domainstructure.png" /></p>
+<p>in which the first two are mandatory; the rest can be left blank if not available.</p>
+<p>For example, the following domain annotations are all valid:</p>
+<div class="highlight"><pre><span></span><code>159,186
+159,186,WD40
+159,186,WD40,Pfam-A
+159,186,,Pfam-A
+159,186,zf-H2C2_2,Pfam-A,,,PF13465
+159,186,zf-H2C2_2,Pfam-A,,,,0.0036,27.00
+159,186,zf-H2C2_2,Pfam-A,,,PF13465,0.0036,27.00
+</code></pre></div>
+<h4 id="related-modifiers">Related modifiers</h4>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>Key (case insensitive)</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>universal modifiers</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>!Groups or !LegendText</td>
+<td>comma separated text</td>
+<td>Legend texts; for example 'group_a,group_b,group_c'</td>
+</tr>
+<tr>
+<td>!LegendColors or !Colors</td>
+<td>comma separated color codes or names</td>
+<td>colors to be applied to the shapes specified by LegendStyle; for example 'red,green,yellow' ;note the number of colors should match the number of legend fields</td>
+</tr>
+<tr>
+<td>!Title or !Legend</td>
+<td>text</td>
+<td>title of the legend; default = name of the dataset</td>
+</tr>
+<tr>
+<td>!ShowLegends</td>
+<td>0 or 1</td>
+<td>0 : hide legends; 1 : show legends</td>
+</tr>
+<tr>
+<td>!opacity</td>
+<td>float number between 0 to 1</td>
+<td>opacity of the dataset</td>
+</tr>
+<tr>
+<td><strong>none pie chart modifiers</strong></td>
+<td></td>
+<td>modifiers that apply to all charts except pies</td>
+</tr>
+<tr>
+<td>!PlotWidth</td>
+<td>integer &gt; 0</td>
+<td>pixel width of the dataset on canvas</td>
+</tr>
+<tr>
+<td>!itemHeightPX or !barHeightPX or !PlotHeight (deprecated) or !Height (deprecated)</td>
+<td>integer &gt; 0</td>
+<td>pixel height of each bar; similar to bar chart</td>
+</tr>
+<tr>
+<td>!itemHeightPCT or !barHeightPCT</td>
+<td>float number between 1 to 100</td>
+<td>percentage of available height taken by each bar; similar to bar chart</td>
+</tr>
+<tr>
+<td>!grid</td>
+<td>none</td>
+<td>show a background grid</td>
+</tr>
+<tr>
+<td>!gridlabel or !axis</td>
+<td>none</td>
+<td>show the values (protein length) corresponding to the grid lines</td>
+</tr>
+<tr>
+<td><strong>unique modifiers</strong></td>
+<td></td>
+<td>modifiers unique to this annotation</td>
+</tr>
+<tr>
+<td>!shadow or !showShadow</td>
+<td>0 or 1</td>
+<td>1: show drop shadow under non-PFAM-B domains; WARNING: if shadow is on, exporting to graphical formats other than SVG is NOT functional!!</td>
+</tr>
+</tbody>
+</table>
+</div>
+<details class="tip" open="open"><summary>Tip</summary><p><strong><em>notes on preparing your datasets!!</em></strong></p>
+<ol>
+<li>please always use TAB to separate the modifiers and their values.</li>
+<li>please also always use TAB to separate the columns in the data section.</li>
+</ol>
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../clrstripshape/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Color strips and color shapes
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../grouplabel/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Group label
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Evolgenius.info.Subramanian et al. Evolview v3 Nucleic Acids Res https://doi.org/10.1093/nar/gkz357
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
